@@ -1,7 +1,5 @@
 package Database;
 
-import java.sql.Timestamp;
-
 public class AftalerObjects {
     // bruges i SeDataController, når data hentes til tableView
     int id;

@@ -18,7 +18,7 @@ public class DBTester {
         aftalerDTO.InsertIntoAftaler(CPR, TimeStart, TimeEnd, Notat, KlinikID);
 
         // test af data udtræk
-        String søgtCPR = "1234567890";
-        aftalerDTO.FindAftaler(søgtCPR);
+        String searchCPR = "1234567890";
+        aftalerDTO.FindAftaler(searchCPR);
     }
 }
