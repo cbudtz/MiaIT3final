@@ -7,6 +7,7 @@ public class DBTester {
         DBConn DBConnklasse = new DBConn();
         Connection connection = DBConnklasse.getConnection();
         AftalerDTO aftalerDTO = new AftalerDTO(connection);
+        UsersDTO usersDTO = new UsersDTO(connection);
 
         /*
         // Test af indsætning i table
@@ -26,5 +27,11 @@ public class DBTester {
         // test af data udtræk af fuld table sorteret efter StartTime
         System.out.println("Alle aftaler i database");
         aftalerDTO.ShowAftaler();
+
+        //test af oprettelse af bruger
+        String brugernavn = "mfj";
+        String kodeord = "1234";
+        usersDTO.InsertIntoUsers(brugernavn, kodeord);
+
     }
 }
