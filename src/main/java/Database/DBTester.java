@@ -8,6 +8,7 @@ public class DBTester {
         Connection connection = DBConnklasse.getConnection();
         AftalerDTO aftalerDTO = new AftalerDTO(connection);
 
+        /*
         // Test af indsætning i table
         String CPR = "1601950000";
         String TimeStart = "2021-10-31 14:00";
@@ -15,7 +16,7 @@ public class DBTester {
         String Notat = "notat tilføjes her";
         String KlinikID = "grp2";
 
-        aftalerDTO.InsertIntoAftaler(CPR, TimeStart, TimeEnd, Notat, KlinikID);
+        aftalerDTO.InsertIntoAftaler(CPR, TimeStart, TimeEnd, Notat, KlinikID);*/
 
         // test af data udtræk på cpr sorteret efter StartTime
         String searchCPR = "1234567890";
