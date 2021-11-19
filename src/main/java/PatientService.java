@@ -8,10 +8,21 @@ public class PatientService {
     @Produces(MediaType.APPLICATION_JSON)
         public List<Patient> getPatients() {
             return PatientDao.getInstance().getPatients();
-        }
+    }
+
     @GET
     @Path("{cpr}")
-    public Patient getPatient(@PathParam())
+    public Patient getPatient(@PathParam("cpr") String cpr) {
+
+        return null;
     }
+    @POST
+    @Produces(MediaType.APPLICATION_JSON)
+    public Patient postPatient(Patient p) {
+        PatientDao.getInstance().getPatients().add(p);
+        return p;
+
+    }
+}
 
 
