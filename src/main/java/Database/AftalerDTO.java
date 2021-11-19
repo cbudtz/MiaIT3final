@@ -38,7 +38,7 @@ public class AftalerDTO {
         ArrayList liste = new ArrayList();
 
         String SQLResults = "SELECT id, CPR, TimeStart, TimeEnd, Notat, KlinikID FROM Aftaler WHERE CPR = "
-                + CPR + ";";
+                + CPR + " ORDER BY TimeStart;";
         try {
             statement = connection.createStatement();
             resultSet = statement.executeQuery(SQLResults);
@@ -47,6 +47,31 @@ public class AftalerDTO {
                 System.out.println(
                         "id: " + resultSet.getInt("id") +
                                 "   Klinik Id: " + resultSet.getString("KlinikID") +
+                                "   TimeStart: " + resultSet.getString("TimeStart") +
+                                "   TimeEnd: " + resultSet.getString("TimeEnd") +
+                                "   Notat: " + resultSet.getString("notat") + "\n"
+                );
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return liste;
+    }
+
+    public ArrayList<AftalerObjects> ShowAftaler() {
+
+        ArrayList liste = new ArrayList();
+
+        String SQLResults = "SELECT * FROM Aftaler ORDER BY TimeStart ;";
+        try {
+            statement = connection.createStatement();
+            resultSet = statement.executeQuery(SQLResults);
+
+            while (resultSet.next()) {
+                System.out.println(
+                        "id: " + resultSet.getInt("id") +
+                                 resultSet.getString("KlinikID") +
+                                "   CPR: " + resultSet.getString("CPR") +
                                 "   TimeStart: " + resultSet.getString("TimeStart") +
                                 "   TimeEnd: " + resultSet.getString("TimeEnd") +
                                 "   Notat: " + resultSet.getString("notat") + "\n"
