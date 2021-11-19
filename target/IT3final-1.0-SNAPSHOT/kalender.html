@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <title>Konsultationer</title>
 </head>
-<a href="Login.html" ><input type="button" value="Log af"></a>
+<a href="Login.html" >
+    <input type="button" value="Log af">
+</a>
 <body>
 <h1>Oversigt over konsultationer</h1>
 <h2>
@@ -13,6 +15,17 @@
         <input type="week" id="week">
         <input type="submit" value="opret ny konsultation">
     </form>
+
+    <form id="patientform">
+        <input type="text" name="name">
+    </form>
+    <button onclick="opretPatient">Ny patient</button>
+
+    <button name="hentPatienter" type="button" onclick="hentPatienter();">
+        Hent Patienter
+    </button>
+    <ul id="patienter">
+    </ul>
 </h2>
     <div class ="center">
 
