@@ -11,7 +11,7 @@ import java.sql.PreparedStatement;
 
 @WebServlet(
         name="WebServer",
-        urlPatterns = "/api"
+        urlPatterns = ""
 )
 public class WebServer extends HttpServlet {
     private static final long serialVersionUID = 1L;
@@ -25,8 +25,8 @@ public class WebServer extends HttpServlet {
             throws ServletException, IOException
     {
         try {
-            DBConn DBConnklasse = new DBConn();
-            Connection con = DBConnklasse.getConnection();
+            //DBConn DBConnklasse = new DBConn();
+            Connection con = DBConn.getConnection();
 
             // Initialize the database
             //Connection con = connection.getConnection();
