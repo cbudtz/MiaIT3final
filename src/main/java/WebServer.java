@@ -1,4 +1,4 @@
-package Database;
+import Database.DBConn;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,7 +11,7 @@ import java.sql.PreparedStatement;
 
 @WebServlet(
         name="WebServer",
-        urlPatterns = ""
+        urlPatterns = "/api"
 )
 public class WebServer extends HttpServlet {
     private static final long serialVersionUID = 1L;
