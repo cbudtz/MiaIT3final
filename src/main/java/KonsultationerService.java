@@ -1,0 +1,2 @@
+public class KonsultationerService {
+}

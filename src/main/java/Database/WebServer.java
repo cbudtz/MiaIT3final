@@ -9,7 +9,10 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 
-@WebServlet("/Database.WebServer")
+@WebServlet(
+        name="WebServer",
+        urlPatterns = ""
+)
 public class WebServer extends HttpServlet {
     private static final long serialVersionUID = 1L;
 

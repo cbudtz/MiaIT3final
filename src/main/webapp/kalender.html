@@ -4,6 +4,7 @@
    <link rel="stylesheet" href="kalender.css">
     <meta charset="UTF-8">
     <title>Konsultationer</title>
+    <script src="kalender.js"></script>
 </head>
 <a href="Login.html" >
     <input type="button" value="Log af">
@@ -19,11 +20,8 @@
     <form id="patientform">
         <input type="text" name="name">
     </form>
-    <button onclick="opretPatient">Ny patient</button>
-
-    <button name="hentPatienter" type="button" onclick="hentPatienter()">
-        Hent Patienter
-    </button>
+    <!--<button onclick="opretPatient">Ny patient</button>-->
+    <button name="hentPatienter" type="button" onclick="hentPatienter()">Hent Patienter</button>
     <ul id="patienter">
     </ul>
 </h2>
@@ -91,5 +89,5 @@
 </table>
 </div>
 </body>
-<script src="kalender.js"></script>
+
 </html>
