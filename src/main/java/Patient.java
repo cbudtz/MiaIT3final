@@ -1,4 +1,6 @@
 public class Patient {
+    public Patient() {
+    }
 
     public String name;
     public String Cpr;

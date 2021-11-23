@@ -5,6 +5,6 @@ import javax.ws.rs.Path;
 public class TestService {
     @GET
     public String getTest(){
-        return "test";
+        return "test klaret";
     }
 }

@@ -10,6 +10,7 @@ public class PatientDao {
     private static PatientDao instance = new PatientDao();
 
     private PatientDao() {
+        System.out.println("laver patienter");
         Patient Peter = new Patient();
         Patient Blessed = new Patient();
         Peter.setName("Peter");
