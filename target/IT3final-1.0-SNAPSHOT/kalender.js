@@ -10,18 +10,19 @@ async function hentPatienter(){
     // Vis patienter
 }
 
-let listelements =""
-json.forEach(function(element){
-    listelements += ("<li>"+element.name+"</li>")
-})
-
-let form= document.getElementById("patientform");
-let formData = new FormData(form)
-let patientJson = Object.fromEntries(formData);
-let res = await fetch("rest/patients", {
-    method:"POST",
-    body: JSON.stringify(patientJson),
-    headers:{
-        'content-type':"application/json"
-    }
-})
+// TODO: Tag stilling til hvad der skal ske med nedenstående kode
+// let listelements =""
+// json.forEach(function(element){
+//     listelements += ("<li>"+element.name+"</li>")
+// })
+//
+// let form= document.getElementById("patientform");
+// let formData = new FormData(form)
+// let patientJson = Object.fromEntries(formData);
+// let res = await fetch("rest/patients", {
+//     method:"POST",
+//     body: JSON.stringify(patientJson),
+//     headers:{
+//         'content-type':"application/json"
+//     }
+// })
