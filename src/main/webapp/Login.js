@@ -13,5 +13,5 @@ function hent() {
             throw Error (await response.text());
         }
         }).then()
-        )
+
 }
