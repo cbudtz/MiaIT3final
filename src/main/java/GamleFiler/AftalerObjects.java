@@ -1,4 +1,4 @@
-package rest;
+package GamleFiler;
 /*
 public class AftalerObjects {
     // bruges i SeDataController, når data hentes til tableView

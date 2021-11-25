@@ -1,4 +1,4 @@
-package rest;
+package GamleFiler;
 
 import java.util.ArrayList;
 import java.util.List;

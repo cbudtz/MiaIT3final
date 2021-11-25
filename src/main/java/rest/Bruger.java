@@ -8,7 +8,7 @@ public class Bruger {
         return brugernavn;
     }
 
-    public String setBrugernavn(String brugernavn) {
+    public void setBrugernavn(String brugernavn) {
         this.brugernavn = brugernavn;
     }
 
@@ -16,7 +16,7 @@ public class Bruger {
         return password;
     }
 
-    public String setPassword(String password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 }

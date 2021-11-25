@@ -12,9 +12,10 @@ public class LoginService {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.TEXT_PLAIN)
-    public String validerBruger(Bruger bruger){
+    public String validerBruger(Bruger bruger) {
         return loginController.validerBruger(bruger);
     }
+}
 /*
     @GET
     @Produces(MediaType.APPLICATION_JSON)

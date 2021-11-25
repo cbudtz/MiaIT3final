@@ -1,6 +1,5 @@
 package rest;
 
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -14,11 +13,11 @@ public class BrugerDAO {
     public Bruger findBruger(String brugernavn) {
         Connection connection = MySQLDB.getConnection();
         try {
-            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM users WHERE username = ? ");
+            PreparedStatement preparedStatement = connection.prepareStatement("SELECT * FROM Users WHERE User = ? ");
             preparedStatement.setString(1, brugernavn);
             ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
-                String password = resultSet.getString("password");
+                String password = resultSet.getString("Password");
                 Bruger bruger = new Bruger();
                 bruger.setBrugernavn(brugernavn);
                 bruger.setPassword(password);

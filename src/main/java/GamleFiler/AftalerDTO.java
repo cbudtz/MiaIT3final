@@ -1,4 +1,4 @@
-package rest;
+package GamleFiler;
 /*
 import java.sql.*;
 import java.util.ArrayList;
