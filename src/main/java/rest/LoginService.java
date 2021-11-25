@@ -1,14 +1,20 @@
 package rest;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import java.sql.*;
 
 @Path("login")
 public class LoginService {
+    private static LoginController loginController = new LoginController();
+
+
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.TEXT_PLAIN)
+    public String validerBruger(Patient loginData){
+
+    }
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)

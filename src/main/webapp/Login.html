@@ -12,17 +12,19 @@
 <div class ="center">
     <h1>Login</h1>
     <form method="post">
+        <form id="Loginform">
           <div class="txt_field">
-              <label>Brugerssnavn</label>
-              <input type="text" id="Brugernavn" required>
+              <label>Brugernavn</label>
+              <input type="text" id="brugernavn" required>
           </div>
         <div class="password">
             <label>Kodeord</label>
             <input type="password" id="password" required>
         </div>
+        </form>
     </form>
     <div>
-        <input type ="button" value="Login" class="knap" onclick="hent()">
+        <input type ="button" value="Login" class="knap" onclick="login()">
     </div>
     <!--
     <div class="button">

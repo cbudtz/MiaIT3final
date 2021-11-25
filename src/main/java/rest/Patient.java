@@ -4,20 +4,22 @@ public class Patient {
     public Patient() {
     }
 
-    public String name;
-    public String Cpr;
-
-    public String getName() {
-        return name;
-    }
-    public String getCpr() {
-        return Cpr;
+    public String getBrugernavn() {
+        return brugernavn;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setBrugernavn(String brugernavn) {
+        this.brugernavn = brugernavn;
     }
-    public void setCpr(String Cpr) {
-        this.Cpr = Cpr;
+
+    public String getPassword() {
+        return password;
     }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public String brugernavn;
+    public String password;
 }
