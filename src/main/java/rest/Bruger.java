@@ -1,14 +1,14 @@
 package rest;
 
-public class Patient {
-    public Patient() {
-    }
+public class Bruger {
+    private String brugernavn;
+    private String password;
 
     public String getBrugernavn() {
         return brugernavn;
     }
 
-    public void setBrugernavn(String brugernavn) {
+    public String setBrugernavn(String brugernavn) {
         this.brugernavn = brugernavn;
     }
 
@@ -16,10 +16,7 @@ public class Patient {
         return password;
     }
 
-    public void setPassword(String password) {
+    public String setPassword(String password) {
         this.password = password;
     }
-
-    public String brugernavn;
-    public String password;
 }

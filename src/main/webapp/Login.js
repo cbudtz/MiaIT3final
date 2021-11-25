@@ -1,23 +1,18 @@
 /*Så snart async tilføjes får denne sin egen tråd og kan køre */
 async function login() {
-    let loginform = document.getElementById("loginform")
-    const formData = new FormData(loginform);
-    const object = Object.fromEntries(formData);
-    console.log(object);
-    const res = await fetch("api/login",
-    {
+    let loginForm = document.getElementById("loginform");
+    let formData = new FormData(loginForm);
+    let formObject = Object.fromEntries(formData);
+    console.log(formObject);
+    const res =await fetch("api/login", {
         method: "POST",
-            body:
-
         headers: {
-            "content-type"
-        :
-            "application/json"
-        }
-    }
-)
+            "content-type": "application/json"
+        },
+        body: JSON.stringify(formObject)
+    })
+    localStorage.setItem("token",await res.text())
 
-localStorage.setItem("token", await res.text())
 }
 /*
     }
@@ -40,4 +35,3 @@ localStorage.setItem("token", await res.text())
     }
 
 }*/
-}

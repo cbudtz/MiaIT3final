@@ -24,6 +24,7 @@ public class MySQLDB {
     public static Connection getConnection(){
         Connection con = null;
         try {
+            /*Hvordan klasser bliver indlæst i java. Men når man kører noget på en tomcat server fungerer det ikke på samme måde. man skal specifiere at.. */
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://mysql-db.caprover.diplomportal.dk:3306/s205487?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC","s205487","zDRQReBWgpShFUe1VxYWZ");
         } catch (Exception ex) {

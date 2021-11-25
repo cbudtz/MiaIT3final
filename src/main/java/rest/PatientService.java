@@ -11,25 +11,27 @@ public class PatientService {
     @GET
     //Produces efterfølges af noget der sendes tilbage
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Patient> getPatients() {
+    public List<Bruger> getPatients() {
 
-        return PatientDao.getInstance().getPatients();
+        return BrugerDAO.getInstance().getPatients();
     }
-
+/*
     @GET
     @Path("{cpr}")
-    public Patient getPatient(@PathParam("cpr") String cpr) {
+    public Bruger getPatient(@PathParam("cpr") String cpr) {
         return null;
     }
 
     //POST bruges når der skal tilføjes en ressource, feks en ny pt skal oprettes
     @POST
     @Produces(MediaType.APPLICATION_JSON)
-    public Patient postPatient(Patient p) {
+    public Bruger postPatient(Bruger p) {
         PatientDao.getInstance().getPatients().add(p);
         return p;
 
     }
+
+ */
 }
 
 

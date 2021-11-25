@@ -1,5 +1,7 @@
 package rest;
 
 public class LoginController {
-    public String validerBruger()
+    public String validerBruger(LoginData loginData){
+    return
+    }
 }
