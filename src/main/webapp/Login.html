@@ -11,17 +11,15 @@
 
 <div class ="center">
     <h1>Login</h1>
-    <form method="post">
-        <form id="loginform">
-          <div class="txt_field">
-              <label>Brugernavn</label>
-              <input type="text" id="brugernavn" name="brugernavn" required>
-          </div>
+    <form method="post" id="loginform">
+        <div class="txt_field">
+            <label>Brugernavn</label>
+            <input type="text" id="brugernavn" name="brugernavn" required>
+        </div>
         <div class="password">
             <label>Kodeord</label>
             <input type="password" id="password" name="password" required>
         </div>
-        </form>
     </form>
     <div>
         <input type ="button" value="Login" class="knap" onclick="login()">

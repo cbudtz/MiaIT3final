@@ -35,7 +35,17 @@
        <dependency>
            <groupId>org.glassfish.jersey.containers</groupId>
            <artifactId>jersey-container-servlet</artifactId>
-           <version>2.25.1</version>
+           <version>2.35</version>
+       </dependency>
+       <dependency>
+           <groupId>org.glassfish.jersey.inject</groupId>
+           <artifactId>jersey-hk2</artifactId>
+           <version>2.35</version>
+       </dependency>
+       <dependency>
+           <groupId>org.glassfish.jersey.media</groupId>
+           <artifactId>jersey-media-json-jackson</artifactId>
+           <version>2.35</version>
        </dependency>
        <dependency>
            <groupId>javax.servlet</groupId>
@@ -48,11 +58,6 @@
            <version>2.1.1</version>
        </dependency>
 
-       <dependency>
-           <groupId>org.glassfish.jersey.media</groupId>
-           <artifactId>jersey-media-json-jackson</artifactId>
-           <version>2.25.1</version>
-       </dependency>
        <!-- Old school xml bindings to shut up tomcat -->
         <dependency>
             <groupId>javax.xml.bind</groupId>
@@ -60,32 +65,22 @@
             <version>2.3.1</version>
         </dependency>
         <!-- JAX-RS Implementation (Jersey) -->
-
         <!-- Make Jersey Shut up! -->
-
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
             <version>0.7.0</version>
         </dependency>
-
         <dependency>
             <groupId>javax.activation</groupId>
             <artifactId>activation</artifactId>
             <version>1.1</version>
         </dependency>
-
         <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.25</version>
-        </dependency>
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.2.2</version>
-            <scope>compile</scope>
+            <version>8.0.30</version>
         </dependency>
         <dependency>
             <groupId>com.sun.xml.bind</groupId>

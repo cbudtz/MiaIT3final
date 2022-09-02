@@ -7,8 +7,6 @@ import java.sql.SQLException;
 
 public class BrugerDAO {
 
-    public static PatientService getInstance() {
-    }
 
     public Bruger findBruger(String brugernavn) {
         Connection connection = MySQLDB.getConnection();

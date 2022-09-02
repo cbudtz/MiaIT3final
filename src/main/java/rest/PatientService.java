@@ -13,7 +13,7 @@ public class PatientService {
     @Produces(MediaType.APPLICATION_JSON)
     public List<Bruger> getPatients() {
 
-        return BrugerDAO.getInstance().getPatients();
+        return null;
     }
 /*
     @GET
